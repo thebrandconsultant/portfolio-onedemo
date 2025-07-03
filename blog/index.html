@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - My Site</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="../index.html">My Site</a></h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html" >Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../blog/index.html" class="active">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="blog">
+    <section class="posts-list" aria-label="Blog Posts">
+      <article>
+        <h2><a href="demo-article.html">Post Title</a></h2>
+        <p class="meta">
+          Published <time datetime="2025-07-03">July 3, 2025</time> by <a href="/author/james-shier">James Shier</a>
+        </p>
+        <p>Post excerpt goes here. A brief summary of the content to entice readers to click through.</p>
+        <a href="/blog/post-slug">Read more &rarr;</a>
+      </article>
+      <!-- Repeat <article> for each post -->
+
+    </section>
+
+    <aside aria-label="Sidebar">
+      <section class="search">
+        <h3>Search</h3>
+        <form action="/blog/search" method="get">
+          <label for="search-input" class="visually-hidden">Search blog posts</label>
+          <input type="search" id="search-input" name="q" placeholder="Search posts...">
+          <button type="submit">Search</button>
+        </form>
+      </section>
+
+      <section class="categories">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="/blog/category/design">Design</a></li>
+          <li><a href="/blog/category/development">Development</a></li>
+          <li><a href="/blog/category/gardening">Gardening</a></li>
+          <!-- More categories -->
+        </ul>
+      </section>
+
+      <section class="recent-posts">
+        <h3>Recent Posts</h3>
+        <ul>
+          <li><a href="/blog/another-post">Another Post Title</a></li>
+          <li><a href="/blog/yet-another">Yet Another Post Title</a></li>
+          <!-- More recent posts -->
+        </ul>
+      </section>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 James Shier. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

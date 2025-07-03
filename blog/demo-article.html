@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Article - My Blog</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="../index.html">My Site</a></h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../blog/index.html" class="active">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="blog">
+    <section class="posts-list" aria-label="Article">
+      <article>
+        <h1>Demo Blog Article Title</h1>
+        <p class="meta">Published <time datetime="2025-07-03">July 3, 2025</time> by <a href="/author/james-shier">James Shier</a></p>
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop" alt="Ocean horizon" class="article-image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel neque non libero suscipit suscipit. Nulla facilisi. Integer at erat nec eros bibendum molestie. Mauris nec luctus purus. Duis euismod, urna sed fermentum fringilla, risus eros facilisis sapien, sit amet tempus augue nibh vel dui.</p>
+        <h2>Section Heading</h2>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus non mauris sit amet augue tincidunt aliquet. In hac habitasse platea dictumst.</p>
+        <blockquote>
+          <p>“This is a highlighted quote to showcase styling of blockquotes within the article.”</p>
+        </blockquote>
+        <h3>Subsection Heading</h3>
+        <p>Aliquam erat volutpat. Donec tristique ipsum vitae tellus commodo, vitae aliquam mi scelerisque. Sed at libero a metus suscipit auctor.</p>
+        <p>Thank you for reading! Feel free to leave a comment or share this post.</p>
+      </article>
+
+      <aside aria-label="Sidebar">
+        <section class="search">
+          <h3>Search Posts</h3>
+          <form action="/blog/search" method="get">
+            <label for="search-input" class="visually-hidden">Search blog posts</label>
+            <input type="search" id="search-input" name="q" placeholder="Search posts...">
+            <button type="submit">Search</button>
+          </form>
+        </section>
+
+        <section class="categories">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="/blog/category/design">Design</a></li>
+            <li><a href="/blog/category/development">Development</a></li>
+            <li><a href="/blog/category/gardening">Gardening</a></li>
+          </ul>
+        </section>
+
+        <section class="recent-posts">
+          <h3>Recent Posts</h3>
+          <ul>
+            <li><a href="/blog/demo-article">Demo Blog Article Title</a></li>
+            <li><a href="/blog/another-post">Another Post Title</a></li>
+            <li><a href="/blog/yet-another">Yet Another Post Title</a></li>
+          </ul>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 James Shier. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

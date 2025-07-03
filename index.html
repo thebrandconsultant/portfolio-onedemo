@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Site</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="index.html">My Site</a></h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Welcome to My Site</h2>
+        <p>Your go-to resource for design, development, and gardening tips.</p>
+        <a href="/blog" class="read-more">Explore the Blog &rarr;</a>
+
+        <!-- New interactive tip button -->
+        <button id="tipButton" class="tip-btn">Show me a gardening tip</button>
+        <p id="tipDisplay" class="tip-display"></p>
+      </div>
+    </section>
+  </main>
+
+  <section class="features">
+    <div class="container">
+      <div class="feature-item">
+        <h3>Latest Posts</h3>
+        <p>Stay updated with my newest articles and tutorials.</p>
+        <a href="/blog" class="read-more">View Posts &rarr;</a>
+      </div>
+      <div class="feature-item">
+        <h3>About Me</h3>
+        <p>Learn more about my background and expertise.</p>
+        <a href="/about" class="read-more">Learn More &rarr;</a>
+      </div>
+      <div class="feature-item">
+        <h3>Contact</h3>
+        <p>Get in touch for collaborations or questions.</p>
+        <a href="/contact" class="read-more">Get in Touch &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 James Shier. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Include your JS -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
